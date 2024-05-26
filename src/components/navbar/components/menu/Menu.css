@@ -1,0 +1,35 @@
+.menu{
+    
+}
+
+.menu__list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu__item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #05386B;
+}
+
+.menu__item:not(:last-of-type){
+    margin-right: 16px;
+}
+
+.menu__link{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: #EDF5E1;
+    padding: 50px;
+}

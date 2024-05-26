@@ -1,0 +1,37 @@
+.cryptoStatsBlock {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cryptoStatsElement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cryptoStatsElement:not(:last-of-type) {
+    margin-right: 16px;
+}
+
+.cryptoStatsCoin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    color: #05386B;
+}
+
+.cryptoStatsCoinPrice {
+    color: #05386B;
+    margin-left: 4px;
+}
