@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./CryptoStats.module.css";
+import classes from "./CryptoStats.module.css";
 import Binance from "../../../../api/binance.js";
 
 const CryptoStats = () => {
@@ -15,7 +15,7 @@ const CryptoStats = () => {
 
         const syncInterval = setInterval(() => {
             cryptoData();
-        }, 8192);
+        }, 10240);
 
         return (() => {
             clearInterval(syncInterval);
@@ -23,35 +23,25 @@ const CryptoStats = () => {
     }, []);
 
     return (
-        <div className={styles.cryptoStatsBlock}>
+        <div className={classes.cryptoStatsBlock}>
             {coins.length ?
                 coins.map((coin, index) => (
-                    <div className="cryptoStatsElement" key={index}>
-                        <h1 className="cryptoStatsCoin">
+                    <div className={classes.cryptoStatsElement} key={index}>
+                        <h1 className={classes.cryptoStatsCoin}>
                             {coin.symbol.replace('USDT', '')}:
-                            <span className="cryptoStatsCoinPrice">
+                            <span className={classes.cryptoStatsCoinPrice}>
                                 ${parseFloat(coin.price).toFixed(2)}
                             </span>
                         </h1>
                     </div>
                 ))
-                : (<>
-{/*                     <div className="crypto-stats__element">
-                        <h1 className="crypto-stats__coin">
-                            BTC: <span className="crypto-stats__coin-price">$...</span>
+                : (
+                    <div className={classes.cryptoStatsElement}>
+                        <h1 className={classes.cryptoStatsCoin}>
+                            Loading...
                         </h1>
                     </div>
-                    <div className="crypto-stats__element">
-                        <h1 className="crypto-stats__coin">
-                            ETH: <span className="crypto-stats__coin-price">$...</span>
-                        </h1>
-                    </div>
-                    <div className="crypto-stats__element">
-                        <h1 className="crypto-stats__coin">
-                            BNB: <span className="crypto-stats__coin-price">$...</span>
-                        </h1>
-                    </div> */}
-                </>)
+                )
             }
         </div>
     );

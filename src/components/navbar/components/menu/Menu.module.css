@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menuList {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menuItem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem:not(:last-of-type) {
+    margin-right: 16px;
+}
+
+.menuLink {
+    width: 100%;
+    height: auto;
+    background-color: #05386B;
+    clip-path: polygon(0 6%, 100% 0, 95% 96%, 0 89%);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: #EDF5E1;
+    padding: 8px 16px;
+    overflow: hidden;
+    transition: color 128ms linear;
+}
+
+.menuLink:hover {
+    color: #8DE4AF;
+}

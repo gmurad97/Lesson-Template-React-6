@@ -1,23 +1,23 @@
-import "./Menu.css";
+import classes from "./Menu.module.css";
 
 const Menu = () => {
     return (
-        <div className="menu">
-            <ul className="menu__list">
-                <li className="menu__item">
-                    <a className="menu__link" href="">Home</a>
+        <div className={classes.menu}>
+            <ul className={classes.menuList}>
+                <li className={classes.menuItem}>
+                    <a className={classes.menuLink} href="/#">Home</a>
                 </li>
-                <li className="menu__item">
-                    <a className="menu__link" href="">Cryptocurrency</a>
+                <li className={classes.menuItem}>
+                    <a className={classes.menuLink} href="/#">Cryptocurrency</a>
                 </li>
-                <li className="menu__item">
-                    <a className="menu__link" href="">Products</a>
+                <li className={classes.menuItem}>
+                    <a className={classes.menuLink} href="/#">Products</a>
                 </li>
-                <li className="menu__item">
-                    <a className="menu__link" href="">Contacts</a>
+                <li className={classes.menuItem}>
+                    <a className={classes.menuLink} href="/#">Contacts</a>
                 </li>
-                <li className="menu__item">
-                    <a className="menu__link" href="">About</a>
+                <li className={classes.menuItem}>
+                    <a className={classes.menuLink} href="/#">About</a>
                 </li>
             </ul>
         </div>
