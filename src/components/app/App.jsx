@@ -1,5 +1,6 @@
 import Topbar from "../topbar/Topbar.jsx";
 import Navbar from "../navbar/Navbar.jsx";
+import CryptocurrencySection from "../cryptocurrency_section/CryptocurrencySection.jsx";
 
 const App = () => {
     return (
@@ -9,7 +10,7 @@ const App = () => {
                 <Navbar />
             </header>
             <main className="main">
-
+                <CryptocurrencySection />
             </main>
 
             <footer className="footer">
