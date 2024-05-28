@@ -29,6 +29,7 @@
 }
 
 .menuLink {
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #05386B;
@@ -40,6 +41,40 @@
     padding: 8px 16px;
     overflow: hidden;
     transition: color 128ms linear;
+}
+
+.menuLink::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -12px;
+    width: 12px;
+    height: 12px;
+    background-image: conic-gradient(from 45deg, #5cdb95, transparent);
+    border-radius: 6px;
+    transition: bottom 128ms linear, left 128ms linear;
+}
+
+.menuLink::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 12px;
+    height: 12px;
+    background-image: conic-gradient(from 225deg, #5cdb95, transparent);
+    border-radius: 6px;
+    transition: top 128ms linear, right 128ms linear;
+}
+
+.menuLink:hover::before {
+    bottom: 4px;
+    left: 1px;
+}
+
+.menuLink:hover::after {
+    top: 0px;
+    right: 2px;
 }
 
 .menuLink:hover {

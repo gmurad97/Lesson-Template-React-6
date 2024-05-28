@@ -1,21 +1,25 @@
-import Topbar from "../topbar/Topbar.jsx";
-import Navbar from "../navbar/Navbar.jsx";
-import CryptocurrencySection from "../cryptocurrency_section/CryptocurrencySection.jsx";
+import "./App.css";
+import Header from "../header/Header.jsx";
+import Main from "../main/Main.jsx";
+import Footer from "../footer/Footer.jsx";
+import Topbar from "../header/components/topbar/Topbar.jsx";
+import Navbar from "../header/components/navbar/Navbar.jsx";
 
 const App = () => {
     return (
         <div className="app">
-            <header className="header">
+            <Header>
                 <Topbar discountText="Exclusive discount: 10% off all fresh produce!" isCryptoStats={true} />
                 <Navbar />
-            </header>
-            <main className="main">
-                <CryptocurrencySection />
-            </main>
+            </Header>
 
-            <footer className="footer">
+            <Main>
 
-            </footer>
+            </Main>
+
+            <Footer>
+
+            </Footer>
         </div>
     );
 }

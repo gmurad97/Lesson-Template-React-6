@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import classes from "./CryptoStats.module.css";
-import Binance from "../../../../api/binance.js";
+import Binance from "../../../../../../api/binance.js";
 
-const CryptoStats = () => {
+const CryptoStats = ({ targetCoins }) => {
     const [coins, setCoins] = useState([]);
 
     useEffect(() => {
         const cryptoData = async () => {
-            const cryptoStats = await Binance.getCryptoData(`["BTCUSDT","ETHUSDT","BNBUSDT"]`);
+            const cryptoStats = await Binance.getCryptoData(targetCoins);
             setCoins(cryptoStats);
         }
 

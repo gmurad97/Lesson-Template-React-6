@@ -10,7 +10,7 @@ const Topbar = ({ discountText, isCryptoStats }) => {
             {
                 isCryptoStats &&
                 <div className={classes.topbarRow}>
-                    <CryptoStats />
+                    <CryptoStats targetCoins='["BTCUSDT","ETHUSDT","BNBUSDT"]' />
                 </div>
             }
         </div>
