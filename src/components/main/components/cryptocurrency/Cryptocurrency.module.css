@@ -1,0 +1,75 @@
+.cryptocurrencyBlock {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cryptocurrencyTable {
+    width: 100%;
+    height: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.cryptocurrencyTable th,
+.cryptocurrencyTable td {
+    text-align: left;
+    border: 2px solid #05386B;
+    padding: 8px 16px;
+}
+
+.cryptocurrencyTable th {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cryptocurrencyTable td {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+.cryptocurrencyBlock {
+    /* Your existing styles */
+}
+
+.cryptocurrencyTable {
+    /* Your existing styles */
+}
+
+.cryptocurrencyTable th,
+.cryptocurrencyTable td {
+    /* Your existing styles */
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    font-weight: bold;
+}
+
+.priceUp {
+    background-color: green; /* Light green */
+}
+
+.priceDown {
+    background-color: red; /* Light red */
+}
