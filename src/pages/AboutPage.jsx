@@ -1,7 +1,12 @@
-const About = () => {
+import Section from "../components/main/components/section/Section.jsx";
+import About from "../components/main/components/about/About.jsx";
+
+const AboutPage = () => {
     return (
-        <h1>About Page</h1>
+        <Section sectionTitle="about page">
+            <About />
+        </Section>
     );
 }
 
-export default About;
+export default AboutPage;
