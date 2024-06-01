@@ -1,4 +1,35 @@
-import React from 'react';
+import classes from "./Products.module.css";
+import DummyJson from "../../../../api/dummyjson.js";
+
+const Products = () => {
+    return (
+        <div className={classes.products}>
+
+            <div className={classes.product}>
+
+
+                <div className={classes.productHeader}>
+                    .{classes.product}
+                </div>
+
+                <div className={classes.productBody}>
+
+                </div>
+
+
+                <div className={classes.productImgBlock}>
+
+                </div>
+                <div className="rr"></div>
+                <div className="rr"></div>
+            </div>
+        </div>
+    );
+}
+
+export default Products;
+
+/* import React from 'react';
 import classes from './Products.module.css';
 
 const Products = () => {
@@ -54,3 +85,4 @@ const Products = () => {
 }
 
 export default Products;
+ */

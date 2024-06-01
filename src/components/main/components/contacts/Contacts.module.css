@@ -1,11 +1,35 @@
-.contacts{
+.contacts {
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
+    gap: 16px;
 }
 
-.contactsBlock{
+.contact {
     width: 100%;
-    border: 1px solid darkmagenta;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #5CDB95;
+    border: 2px solid #05386B;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.contactTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #05386B;
+    margin-bottom: 8px;
+}
+
+.contactDescription {
+    font-size: 14px;
+}
+
+.contactDescription:not(:last-of-type) {
+    margin-bottom: 4px;
 }

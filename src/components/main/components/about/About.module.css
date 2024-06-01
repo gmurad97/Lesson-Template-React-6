@@ -1,64 +1,49 @@
-/* About.module.css */
-
 .about {
-    font-family: Arial, sans-serif;
-    color: #333;
-    padding: 40px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero {
-    margin-bottom: 30px;
-}
-
-.title {
-    font-size: 2.5em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.description {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    color: #666;
-}
-
-.cards {
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
-.card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
+.aboutContent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.cardTitle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
+.aboutContentDescription {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #05386B;
+    margin-bottom: 16px;
 }
 
-.cardText {
-    font-size: 1em;
-    color: #666;
+.aboutContentCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.aboutContentCard {
+    background-color: #5CDB95;
+    border: 2px solid #05386B;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.aboutContentCardTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #05386B;
+    margin-bottom: 8px;
+}
+
+.aboutContentCardText {
+    font-size: 14px;
 }

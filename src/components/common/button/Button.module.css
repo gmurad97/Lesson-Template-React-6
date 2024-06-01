@@ -1,0 +1,16 @@
+.button {
+    position: relative;
+    background-color: #05386B;
+    outline: none;
+    border: none;
+    color: #EDF5E1;
+    clip-path: polygon(0 6%, 100% 0, 95% 96%, 0 89%);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: color 128ms linear;
+    z-index: 0;
+}
+
+.button:hover {
+    color: #5CDB95;
+}

@@ -1,10 +1,24 @@
-.cryptocurrencyBlock {
+.cryptocurrency {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.cryptocurrencySearch {
+    width: 100%;
+    outline: 1px solid #05386B;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+}
+
+.cryptocurrencySearch:focus {
+    outline: 2px solid #05386B;
 }
 
 .cryptocurrencyTable {
@@ -33,43 +47,15 @@
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-.cryptocurrencyBlock {
-    /* Your existing styles */
+.cryptocurrencyPagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 32px;
 }
 
-.cryptocurrencyTable {
-    /* Your existing styles */
-}
-
-.cryptocurrencyTable th,
-.cryptocurrencyTable td {
-    /* Your existing styles */
-}
-
-.pagination {
-    margin-top: 20px;
-}
-
-.pagination button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.pagination .active {
-    font-weight: bold;
-}
-
-.priceUp {
-    background-color: green; /* Light green */
-}
-
-.priceDown {
-    background-color: red; /* Light red */
+.cryptocurrencyPagination>button:not(:last-of-type) {
+    margin-right: 8px;
 }
