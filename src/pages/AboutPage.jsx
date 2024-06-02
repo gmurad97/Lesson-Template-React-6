@@ -3,7 +3,7 @@ import About from "../components/main/components/about/About.jsx";
 
 const AboutPage = () => {
     return (
-        <Section sectionTitle="about page">
+        <Section sectionTitle="About">
             <About />
         </Section>
     );

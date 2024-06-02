@@ -43,7 +43,8 @@
     transition: color 128ms linear;
 }
 
-.menuLink::before {
+.menuLink::before,
+.menuLink.active::before {
     content: "";
     position: absolute;
     bottom: -12px;
@@ -55,7 +56,8 @@
     transition: bottom 128ms linear, left 128ms linear;
 }
 
-.menuLink::after {
+.menuLink::after,
+.menuLink.active::after {
     content: "";
     position: absolute;
     top: -12px;
@@ -67,16 +69,19 @@
     transition: top 128ms linear, right 128ms linear;
 }
 
-.menuLink:hover::before {
+.menuLink:hover::before,
+.menuLink.active::before {
     bottom: 4px;
     left: 1px;
 }
 
-.menuLink:hover::after {
+.menuLink:hover::after,
+.menuLink.active::after {
     top: 0px;
     right: 2px;
 }
 
-.menuLink:hover {
+.menuLink:hover,
+.menuLink.active {
     color: #8DE4AF;
 }

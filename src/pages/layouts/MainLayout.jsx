@@ -6,7 +6,6 @@ import Main from "../../components/main/Main.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import Copyright from "../../components/footer/components/copyright/Copyright.jsx";
 
-
 const MainLayout = () => {
     return (
         <>
@@ -19,7 +18,6 @@ const MainLayout = () => {
             </Main>
             <Footer>
                 <Copyright />
-
             </Footer>
         </>
     );

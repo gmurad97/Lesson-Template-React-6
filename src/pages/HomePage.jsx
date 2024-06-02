@@ -1,21 +1,19 @@
 import Section from "../components/main/components/section/Section.jsx";
-
-import Contacts from "../components/main/components/contacts/Contacts.jsx";
-
-import Products from "../components/main/components/products/Products.jsx";
-import About from "../components/main/components/about/About.jsx";
 import Cryptocurrency from "../components/main/components/cryptocurrency/Cryptocurrency.jsx";
-import Button from "../components/common/button/Button.jsx";
+import Contacts from "../components/main/components/contacts/Contacts.jsx";
+import About from "../components/main/components/about/About.jsx";
 
 const HomePage = () => {
     return (
         <>
-            <Button>12312321</Button>
-            <Section sectionTitle="contact">
+            <Section sectionTitle="Cryptocurrency List">
                 <Cryptocurrency />
+            </Section>
+            <Section sectionTitle="Contacts">
                 <Contacts />
+            </Section>
+            <Section sectionTitle="About">
                 <About />
-                <Products />
             </Section>
         </>
     );
